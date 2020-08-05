@@ -151,6 +151,7 @@ data_long <- data_long %>%
   select(user_id, race, age, age_group, engnat, gender, hand, source, country, region, question_code, question_wording, question_score)
 
 # Export the data
+dir.create("./output")
 write.csv(data_long, file = "./output/big5data_for_tableau.csv", row.names = FALSE)
 
 
